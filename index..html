@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Site Description (for Search Engines) -->
+    <meta name="description"
+        content="Download Rusty Automation Tool v1.0 - High-grade utility script designed for heavy-duty automation and maximum performance.">
+
+    <!-- Favicon / Site Icon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23b85b14'><path d='M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.65.07-.97 0-.32-.03-.65-.07-.97l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.63c-.04.32-.07.65-.07.97 0 .32.03.65.07.97l-2.11 1.63c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.31.61.22l2.49-1c.52.39 1.06.73 1.69.98l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.25 1.17-.59 1.69-.98l2.49 1c.22.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.63z'/></svg>">
+
+    <!-- Open Graph Meta Tags (for WhatsApp, Twitter, Instagram previews when sharing the link) -->
+    <meta property="og:title" content="KEYox - Keylogger & Automation Tool">
+    <meta property="og:description"
+        content="Saftly download KEYox - Keylogger & Automation Tool. High-grade utility script designed for heavy-duty automation and maximum performance.">
+    <meta property="og:image" content="image/KeyOx1.ico">
+    <title>KEYox - Keylogger & Automation Tool</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            background-color: #1a1614;
+            background-image: radial-gradient(#32251e 1px, transparent 0);
+            background-size: 16px 16px;
+            color: #d1c2a5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Header & Logo */
+        header {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 20px 0;
+            border-bottom: 2px dashed #8b4513;
+        }
+
+        .logo {
+            width: 45px;
+            height: 45px;
+            fill: #b85b14;
+            filter: drop-shadow(2px 2px 0px #000);
+        }
+
+        .brand-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #cd7f32;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px #000;
+        }
+
+        /* Main Product Box */
+        .product-box {
+            background: #2b221b;
+            border: 4px solid #5c3a21;
+            outline: 2px solid #110d0a;
+            box-shadow: 10px 10px 0px #000;
+            border-radius: 4px;
+            padding: 25px;
+            max-width: 480px;
+            width: 100%;
+            margin: 40px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .product-box::before {
+            content: "OFFICIAL RELEASE";
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            background: #8b4513;
+            color: #f4e8c1;
+            font-size: 10px;
+            font-weight: bold;
+            padding: 2px 8px;
+            border: 1px solid #000;
+        }
+
+        .product-title {
+            font-size: 22px;
+            color: #e69a28;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border: 2px solid #422a18;
+            filter: sepia(60%) contrast(120%) brightness(80%);
+            margin-bottom: 15px;
+            background-color: #110d0a;
+        }
+
+        .product-description {
+            font-size: 13px;
+            line-height: 1.6;
+            color: #a89882;
+            margin-bottom: 20px;
+            text-align: left;
+            background: #201914;
+            padding: 12px;
+            border: 1px solid #3d2a1d;
+        }
+
+        /* Rustic Download Button */
+        .download-btn {
+            background: linear-gradient(180deg, #b85b14 0%, #6e3003 100%);
+            color: #f4e8c1;
+            border: 2px solid #000;
+            padding: 14px 28px;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: inherit;
+            text-transform: uppercase;
+            cursor: pointer;
+            box-shadow: 4px 4px 0px #000;
+            width: 100%;
+            transition: all 0.1s ease;
+        }
+
+        .download-btn:hover {
+            background: linear-gradient(180deg, #d46b19 0%, #853b05 100%);
+        }
+
+        .download-btn:active {
+            box-shadow: 0px 0px 0px #000;
+            transform: translate(4px, 4px);
+        }
+
+        /* Modal Overlay */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.2s ease;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal-box {
+            background: #2b221b;
+            border: 3px solid #cd7f32;
+            box-shadow: 8px 8px 0px #000;
+            padding: 25px;
+            max-width: 380px;
+            width: 90%;
+            text-align: center;
+        }
+
+        .modal-box p {
+            color: #d1c2a5;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .phone-number {
+            color: #e69a28;
+            font-weight: bold;
+            display: block;
+            margin-top: 5px;
+        }
+
+        /* Footer & Socials */
+        footer {
+            width: 100%;
+            max-width: 800px;
+            border-top: 2px dashed #8b4513;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .social-links a {
+            color: #cd7f32;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: 1px solid #5c3a21;
+            padding: 6px 12px;
+            background: #201914;
+            transition: all 0.2s ease;
+        }
+
+        .social-links a:hover {
+            color: #f4e8c1;
+            background: #8b4513;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <svg class="logo" viewBox="0 0 24 24">
+            <path
+                d="M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.65.07-.97 0-.32-.03-.65-.07-.97l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.63c-.04.32-.07.65-.07.97 0 .32.03.65.07.97l-2.11 1.63c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.31.61.22l2.49-1c.52.39 1.06.73 1.69.98l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.25 1.17-.59 1.69-.98l2.49 1c.22.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.63z" />
+        </svg>
+        <span class="brand-name">KEYox</span>
+    </header>
+
+    <main class="product-box">
+        <h1 class="product-title">KEYox - Keylogger & Automation Tool</h1>
+
+        <img src="image/KeyOx1.ico" alt="Tool Image" class="product-image">
+
+        <div class="product-description">
+            keylogger and automation tool designed for heavy-duty automation and maximum performance. It is a high-grade
+            utility script that allows users to automate tasks, log keystrokes, and perform various functions
+            efficiently. The tool is optimized for speed and reliability, making it suitable for both personal and
+            professional use.
+        </div>
+
+        <button class="download-btn" id="downloadBtn" target="_blank">Download KEYox</button>
+    </main>
+
+    <div class="modal-overlay" id="notificationModal">
+        <div class="modal-box">
+            <p>Redirecting to purchase endpoint...</p>
+            <p>WhatsApp: <span class="phone-number">+2349011526277</span></p>
+        </div>
+    </div>
+
+    <footer>
+        <ul class="social-links">
+            <li><a href="https://www.youtube.com/@mr-wisdom-jason?si=RFCNquzyEHE5Pb3i" target="_blank">YouTube</a></li>
+            <li><a href="https://www.tiktok.com/@mr..wisdom208?_r=1&_t=ZS-99NpArbY6UK" target="_blank">TikTok</a></li>
+            <li><a href="https://www.instagram.com/mrwisdom667?igsi=MXV2MHM0NmI1aDN5bA==" target="_blank">Instagram</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script>
+        const downloadBtn = document.getElementById('downloadBtn');
+        const modal = document.getElementById('notificationModal');
+
+        // Pre-filled WhatsApp message URL
+        const whatsappUrl = "https://wa.me/2349011526277?text=Hey%20i%20would%20like%20to%20buy%20this%20tool";
+
+        downloadBtn.addEventListener('click', () => {
+            modal.classList.add('active');
+
+            setTimeout(() => {
+                window.location.href = whatsappUrl;
+            }, 2500);
+        });
+    </script>
+
+</body>
+
+</html>
